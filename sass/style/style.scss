@@ -1,0 +1,56 @@
+@import '_var';
+@import '_mix';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color;
+    ul{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            color: $text-Color;
+            font-size: 20px;
+        }
+    }
+    .logo{
+     width: 100px;
+     text-align: center;
+     h1{
+        color: $text-Color;
+     }
+    }
+}
+main{
+    width: 100%;
+    display: flex;
+    .left{
+        @include container;
+        h1{
+          @include title
+        }
+        p{
+           @include text
+        }
+    }
+    .rigth{
+        @include container;
+        background-color: $background-color;
+        h1{
+            @include title;
+            color: $text-Color
+        }
+        p{@include text;
+            color: $text-Color;
+        }
+    }
+}

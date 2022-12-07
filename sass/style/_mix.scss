@@ -1,0 +1,20 @@
+@mixin container {
+    width: 50%;
+    height: 90vh;
+    background-color: $text-Color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  title {
+    width: 80%;
+    color: $background-color;
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
+@mixin  text {
+    width: 70%;
+    color: $background-color;
+}
