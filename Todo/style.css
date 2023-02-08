@@ -39,3 +39,6 @@ body{
 .container ul li .check{
     background-color: red;
 }
+.delete{
+    background-color: red;
+}
